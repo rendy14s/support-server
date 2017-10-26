@@ -1,0 +1,45 @@
+{
+  "name": "VMDMasteruserdata",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "string",
+      "required": true
+    },
+    "no_telp": {
+      "type": "string",
+      "required": true
+    },
+    "tglLahir": {
+      "type": "string",
+      "required": true
+    },
+    "statusPerkawinan": {
+      "type": "string",
+      "required": true
+    },
+    "tempatLahir": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
