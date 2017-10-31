@@ -51,6 +51,7 @@ import { RealTime } from './services/core/real.time';
 import { UserApi } from './services/custom/User';
 import { VMDMasteruserdataApi } from './services/custom/VMDMasteruserdata';
 import { VMDUsercredentialApi } from './services/custom/VMDUsercredential';
+import { CredentialUserApi } from './services/custom/CredentialUser';
 /**
 * @module SDKBrowserModule
 * @description
@@ -85,6 +86,7 @@ export class SDKBrowserModule {
         UserApi,
         VMDMasteruserdataApi,
         VMDUsercredentialApi,
+        CredentialUserApi,
         internalStorageProvider,
         { provide: SDKStorage, useClass: StorageBrowser },
         { provide: SocketDriver, useClass: SocketBrowser }

@@ -3,5 +3,15 @@
     "name": "db",
     "connector": "memory",
     "file": "mydata.json"
+  },
+  "pouch": {
+    "host": "103.16.199.130",
+    "port": 3306,
+    "url": "",
+    "database": "serverpr_pouch",
+    "password": "5ervpr1m4",
+    "name": "pouch",
+    "user": "serverprima",
+    "connector": "mysql"
   }
 }
