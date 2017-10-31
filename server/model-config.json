@@ -40,5 +40,17 @@
   "VMDMasterEmmployeeCredential": {
     "dataSource": "db",
     "public": true
+  },
+  "VMDAboutUs": {
+    "dataSource": "db",
+    "public": true
+  },
+  "VMDTeam": {
+    "dataSource": "db",
+    "public": true
+  },
+  "VMDBooking": {
+    "dataSource": "db",
+    "public": true
   }
 }
