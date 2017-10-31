@@ -1,42 +1,42 @@
 /* tslint:disable */
 
 declare var Object: any;
-export interface CredentialUserInterface {
+export interface VMDMasterEmmployeeCredentialInterface {
   "id"?: number;
-  "username": string;
-  "realm": string;
-  "emailVerified"?: string;
+  "realm"?: string;
+  "username"?: string;
   "email"?: string;
+  "emailVerified"?: string;
   "password"?: string;
   accessTokens?: any[];
 }
 
-export class CredentialUser implements CredentialUserInterface {
+export class VMDMasterEmmployeeCredential implements VMDMasterEmmployeeCredentialInterface {
   "id": number;
-  "username": string;
   "realm": string;
-  "emailVerified": string;
+  "username": string;
   "email": string;
+  "emailVerified": string;
   "password": string;
   accessTokens: any[];
-  constructor(data?: CredentialUserInterface) {
+  constructor(data?: VMDMasterEmmployeeCredentialInterface) {
     Object.assign(this, data);
   }
   /**
    * The name of the model represented by this $resource,
-   * i.e. `CredentialUser`.
+   * i.e. `VMDMasterEmmployeeCredential`.
    */
   public static getModelName() {
-    return "CredentialUser";
+    return "VMDMasterEmmployeeCredential";
   }
   /**
   * @method factory
   * @author Jonathan Casarrubias
   * @license MIT
-  * This method creates an instance of CredentialUser for dynamic purposes.
+  * This method creates an instance of VMDMasterEmmployeeCredential for dynamic purposes.
   **/
-  public static factory(data: CredentialUserInterface): CredentialUser{
-    return new CredentialUser(data);
+  public static factory(data: VMDMasterEmmployeeCredentialInterface): VMDMasterEmmployeeCredential{
+    return new VMDMasterEmmployeeCredential(data);
   }
   /**
   * @method getModelDefinition
@@ -47,28 +47,28 @@ export class CredentialUser implements CredentialUserInterface {
   **/
   public static getModelDefinition() {
     return {
-      name: 'CredentialUser',
-      plural: 'CredentialUsers',
-      path: 'CredentialUsers',
+      name: 'VMDMasterEmmployeeCredential',
+      plural: 'VMDMasterEmmployeeCredentials',
+      path: 'VMDMasterEmmployeeCredentials',
       properties: {
         "id": {
           name: 'id',
           type: 'number'
         },
-        "username": {
-          name: 'username',
-          type: 'string'
-        },
         "realm": {
           name: 'realm',
           type: 'string'
         },
-        "emailVerified": {
-          name: 'emailVerified',
+        "username": {
+          name: 'username',
           type: 'string'
         },
         "email": {
           name: 'email',
+          type: 'string'
+        },
+        "emailVerified": {
+          name: 'emailVerified',
           type: 'string'
         },
         "password": {

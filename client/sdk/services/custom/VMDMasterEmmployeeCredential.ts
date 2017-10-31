@@ -10,15 +10,15 @@ import { JSONSearchParams } from '../core/search.params';
 import { ErrorHandler } from '../core/error.service';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Rx';
-import { CredentialUser } from '../../models/CredentialUser';
+import { VMDMasterEmmployeeCredential } from '../../models/VMDMasterEmmployeeCredential';
 import { SocketConnection } from '../../sockets/socket.connections';
 
 
 /**
- * Api services for the `CredentialUser` model.
+ * Api services for the `VMDMasterEmmployeeCredential` model.
  */
 @Injectable()
-export class CredentialUserApi extends BaseLoopBackApi {
+export class VMDMasterEmmployeeCredentialApi extends BaseLoopBackApi {
 
   constructor(
     @Inject(Http) protected http: Http,
@@ -34,7 +34,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Find a related item by id for accessTokens.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {any} fk Foreign key for accessTokens
    *
@@ -44,13 +44,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public findByIdAccessTokens(id: any, fk: any, customHeaders?: Function): Observable<any> {
     let _method: string = "GET";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens/:fk";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens/:fk";
     let _routeParams: any = {
       id: id,
       fk: fk
@@ -64,7 +64,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Delete a related item by id for accessTokens.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {any} fk Foreign key for accessTokens
    *
@@ -77,7 +77,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public destroyByIdAccessTokens(id: any, fk: any, customHeaders?: Function): Observable<any> {
     let _method: string = "DELETE";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens/:fk";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens/:fk";
     let _routeParams: any = {
       id: id,
       fk: fk
@@ -91,7 +91,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Update a related item by id for accessTokens.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {any} fk Foreign key for accessTokens
    *
@@ -105,13 +105,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public updateByIdAccessTokens(id: any, fk: any, data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "PUT";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens/:fk";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens/:fk";
     let _routeParams: any = {
       id: id,
       fk: fk
@@ -125,9 +125,9 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
 
   /**
-   * Queries accessTokens of CredentialUser.
+   * Queries accessTokens of VMDMasterEmmployeeCredential.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} filter 
    *
@@ -137,13 +137,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public getAccessTokens(id: any, filter: LoopBackFilter = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "GET";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens";
     let _routeParams: any = {
       id: id
     };
@@ -157,7 +157,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Creates a new instance in accessTokens of this model.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} data Request data.
    *
@@ -169,13 +169,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public createAccessTokens(id: any, data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens";
     let _routeParams: any = {
       id: id
     };
@@ -190,7 +190,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Deletes all accessTokens of this model.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @returns {object} An empty reference that will be
    *   populated with the actual data once the response is returned
@@ -201,7 +201,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public deleteAccessTokens(id: any, customHeaders?: Function): Observable<any> {
     let _method: string = "DELETE";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens";
     let _routeParams: any = {
       id: id
     };
@@ -212,9 +212,9 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
 
   /**
-   * Counts accessTokens of CredentialUser.
+   * Counts accessTokens of VMDMasterEmmployeeCredential.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} where Criteria to match model instances
    *
@@ -229,7 +229,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public countAccessTokens(id: any, where: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "GET";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens/count";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens/count";
     let _routeParams: any = {
       id: id
     };
@@ -253,13 +253,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public patchOrCreate(data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "PATCH";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers";
+    "/VMDMasterEmmployeeCredentials";
     let _routeParams: any = {};
     let _postBody: any = {
       data: data
@@ -272,7 +272,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Patch attributes for a model instance and persist it into the data source.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} data Request data.
    *
@@ -284,13 +284,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public patchAttributes(id: any, data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "PATCH";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id";
+    "/VMDMasterEmmployeeCredentials/:id";
     let _routeParams: any = {
       id: id
     };
@@ -330,7 +330,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public login(credentials: any, include: any = 'user', rememberMe: boolean = true, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/login";
+    "/VMDMasterEmmployeeCredentials/login";
     let _routeParams: any = {};
     let _postBody: any = {
       credentials: credentials
@@ -366,7 +366,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public logout(customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/logout";
+    "/VMDMasterEmmployeeCredentials/logout";
     let _routeParams: any = {};
     let _postBody: any = {};
     let _urlParams: any = {};
@@ -379,7 +379,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Trigger user's identity verification with configured verifyOptions
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} data Request data.
    *
@@ -394,7 +394,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public verify(id: any, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/verify";
+    "/VMDMasterEmmployeeCredentials/:id/verify";
     let _routeParams: any = {
       id: id
     };
@@ -422,7 +422,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public confirm(uid: any, token: any, redirect: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "GET";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/confirm";
+    "/VMDMasterEmmployeeCredentials/confirm";
     let _routeParams: any = {};
     let _postBody: any = {};
     let _urlParams: any = {};
@@ -449,7 +449,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public resetPassword(options: any, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/reset";
+    "/VMDMasterEmmployeeCredentials/reset";
     let _routeParams: any = {};
     let _postBody: any = {
       options: options
@@ -477,7 +477,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public changePassword(oldPassword: any, newPassword: any, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/change-password";
+    "/VMDMasterEmmployeeCredentials/change-password";
     let _routeParams: any = {};
     let _postBody: any = {
       data: {
@@ -506,7 +506,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   public setPassword(newPassword: any, customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/reset-password";
+    "/VMDMasterEmmployeeCredentials/reset-password";
     let _routeParams: any = {};
     let _postBody: any = {
       data: {
@@ -521,7 +521,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   /**
    * Creates a new instance in accessTokens of this model.
    *
-   * @param {any} id CredentialUser id
+   * @param {any} id VMDMasterEmmployeeCredential id
    *
    * @param {object} data Request data.
    *
@@ -533,13 +533,13 @@ export class CredentialUserApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `CredentialUser` object.)
+   * This usually means the response is a `VMDMasterEmmployeeCredential` object.)
    * </em>
    */
   public createManyAccessTokens(id: any, data: any[] = [], customHeaders?: Function): Observable<any> {
     let _method: string = "POST";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/CredentialUsers/:id/accessTokens";
+    "/VMDMasterEmmployeeCredentials/:id/accessTokens";
     let _routeParams: any = {
       id: id
     };
@@ -552,8 +552,8 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
   /**
    * @ngdoc method
-   * @name sdk.CredentialUser#getCurrent
-   * @methodOf sdk.CredentialUser
+   * @name sdk.VMDMasterEmmployeeCredential#getCurrent
+   * @methodOf sdk.VMDMasterEmmployeeCredential
    *
    * @description
    *
@@ -566,7 +566,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
    */
   public getCurrent(filter: LoopBackFilter = {}): Observable<any> {
     let _method: string = "GET";
-    let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() + "/CredentialUsers" + "/:id";
+    let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() + "/VMDMasterEmmployeeCredentials" + "/:id";
     let id: any = this.auth.getCurrentUserId();
     if (id == null)
     id = '__anonymous__';
@@ -578,8 +578,8 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
   /**
    * Get data of the currently logged user that was returned by the last
-   * call to {@link sdk.CredentialUser#login} or
-   * {@link sdk.CredentialUser#getCurrent}. Return null when there
+   * call to {@link sdk.VMDMasterEmmployeeCredential#login} or
+   * {@link sdk.VMDMasterEmmployeeCredential#getCurrent}. Return null when there
    * is no user logged in or the data of the current user were not fetched
    * yet.
    *
@@ -590,7 +590,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
   /**
    * Get data of the currently logged access tokern that was returned by the last
-   * call to {@link sdk.CredentialUser#login}
+   * call to {@link sdk.VMDMasterEmmployeeCredential#login}
    *
    * @returns object An AccessToken instance.
    */
@@ -598,7 +598,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
     return this.auth.getToken();
   }
   /**
-   * @name sdk.CredentialUser#isAuthenticated
+   * @name sdk.VMDMasterEmmployeeCredential#isAuthenticated
    *
    * @returns {boolean} True if the current user is authenticated (logged in).
    */
@@ -607,7 +607,7 @@ export class CredentialUserApi extends BaseLoopBackApi {
   }
 
   /**
-   * @name sdk.CredentialUser#getCurrentId
+   * @name sdk.VMDMasterEmmployeeCredential#getCurrentId
    *
    * @returns object Id of the currently logged-in user or null.
    */
@@ -617,9 +617,9 @@ export class CredentialUserApi extends BaseLoopBackApi {
 
   /**
    * The name of the model represented by this $resource,
-   * i.e. `CredentialUser`.
+   * i.e. `VMDMasterEmmployeeCredential`.
    */
   public getModelName() {
-    return "CredentialUser";
+    return "VMDMasterEmmployeeCredential";
   }
 }

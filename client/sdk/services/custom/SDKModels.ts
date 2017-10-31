@@ -2,8 +2,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../../models/User';
 import { VMDMasteruserdata } from '../../models/VMDMasteruserdata';
-import { VMDUsercredential } from '../../models/VMDUsercredential';
-import { CredentialUser } from '../../models/CredentialUser';
+import { VMDMasterEmmployeeCredential } from '../../models/VMDMasterEmmployeeCredential';
 
 export interface Models { [name: string]: any }
 
@@ -13,8 +12,7 @@ export class SDKModels {
   private models: Models = {
     User: User,
     VMDMasteruserdata: VMDMasteruserdata,
-    VMDUsercredential: VMDUsercredential,
-    CredentialUser: CredentialUser,
+    VMDMasterEmmployeeCredential: VMDMasterEmmployeeCredential,
     
   };
 
