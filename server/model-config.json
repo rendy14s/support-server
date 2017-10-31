@@ -36,5 +36,9 @@
   "VMDMasteruserdata": {
     "dataSource": "db",
     "public": true
+  },
+  "VMDMasterEmmployeeCredential": {
+    "dataSource": "db",
+    "public": true
   }
 }

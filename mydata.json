@@ -1,26 +1,24 @@
 {
   "ids": {
-    "User": 2,
-    "AccessToken": 1,
+    "User": 1,
+    "AccessToken": 2,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "VMDUsercredential": 2,
-    "VMDMasteruserdata": 2
+    "VMDMasteruserdata": 1,
+    "VMDMasterEmmployeeCredential": 2
   },
   "models": {
-    "User": {
-      "1": "{\"realm\":\"VMD Indonesia\",\"username\":\"vmd\",\"password\":\"$2a$10$2Fob6BCX6bwGXNqTRUOR0u1r4Gtwnj917DqTA9Wccq.VXj6q26OMS\",\"email\":\"vmd@gmail.com\",\"emailVerified\":false,\"id\":1}"
+    "User": {},
+    "AccessToken": {
+      "V78QWUlda4SGgYOrZRKCXZc1srQkaXWdEkTKHqV8OqUhWS6JBDkw9eZwP0CrPsrm": "{\"id\":\"V78QWUlda4SGgYOrZRKCXZc1srQkaXWdEkTKHqV8OqUhWS6JBDkw9eZwP0CrPsrm\",\"ttl\":1209600,\"created\":\"2017-10-31T13:58:50.233Z\",\"userId\":1}"
     },
-    "AccessToken": {},
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "VMDUsercredential": {
-      "1": "{\"username\":\"vmd\",\"password\":\"vmd\",\"id\":1}"
-    },
-    "VMDMasteruserdata": {
-      "1": "{\"fullname\":\"VMD Indonesia\",\"address\":\"Jakarta\",\"photo\":\"potonya\",\"no_telp\":\"085219100674\",\"tglLahir\":\"2017-10-26T19:16:07.005Z\",\"statusPerkawinan\":\"Lajang\",\"tempatLahir\":\"Jakarta\",\"id\":1}"
+    "VMDMasteruserdata": {},
+    "VMDMasterEmmployeeCredential": {
+      "1": "{\"realm\":\"vmd\",\"username\":\"vmd\",\"password\":\"$2a$10$mFQvLEhTnJZCFJ8BQEpXF.5GftlF96BxocTV175gJiz.XrhLdJeDW\",\"email\":\"vmd@gmail.com\",\"emailVerified\":\"false\",\"id\":1}"
     }
   }
 }
