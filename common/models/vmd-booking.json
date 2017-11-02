@@ -9,6 +9,9 @@
     "id": {
       "type": "string"
     },
+    "idUser": {
+      "type": "string"
+    },
     "fullname": {
       "type": "string"
     },
