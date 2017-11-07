@@ -1,0 +1,26 @@
+{
+  "name": "VMDTeam",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "nophone": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

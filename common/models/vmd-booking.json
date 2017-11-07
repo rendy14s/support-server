@@ -1,0 +1,32 @@
+{
+  "name": "VMDBooking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "idUser": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "nameApplication": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

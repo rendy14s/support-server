@@ -1,0 +1,26 @@
+{
+  "name": "VMDAboutUs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nameTeam": {
+      "type": "string"
+    },
+    "historyTeam": {
+      "type": "string"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

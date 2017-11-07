@@ -1,0 +1,43 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 8,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "VMDMasteruserdata": 1,
+    "VMDMasterEmmployeeCredential": 2,
+    "VMDBooking": 3,
+    "VMDAboutUs": 4,
+    "VMDTeam": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "V78QWUlda4SGgYOrZRKCXZc1srQkaXWdEkTKHqV8OqUhWS6JBDkw9eZwP0CrPsrm": "{\"id\":\"V78QWUlda4SGgYOrZRKCXZc1srQkaXWdEkTKHqV8OqUhWS6JBDkw9eZwP0CrPsrm\",\"ttl\":1209600,\"created\":\"2017-10-31T13:58:50.233Z\",\"userId\":1}",
+      "juvvjBzgbKQZnpQOZbGGg1SFDRzGGMxvQLNpFjlXctEVSaWZ0KOEfx1O8kA9Eh2b": "{\"id\":\"juvvjBzgbKQZnpQOZbGGg1SFDRzGGMxvQLNpFjlXctEVSaWZ0KOEfx1O8kA9Eh2b\",\"ttl\":2592000,\"created\":\"2017-10-31T14:05:56.019Z\",\"userId\":1}",
+      "SZREfghSm75q7Ih2cBSgaQk5tZkr7UNEye1FJMAlpf20doZmKM1kWY2vpMBPJgoD": "{\"id\":\"SZREfghSm75q7Ih2cBSgaQk5tZkr7UNEye1FJMAlpf20doZmKM1kWY2vpMBPJgoD\",\"ttl\":1209600,\"created\":\"2017-10-31T14:06:24.039Z\",\"userId\":1}",
+      "BKSIHZwVNVx0hXwsKWqCxwPZOWy7v7zskca6xdFqRgheYH0Er7lZ4KW5nqRpbb0b": "{\"id\":\"BKSIHZwVNVx0hXwsKWqCxwPZOWy7v7zskca6xdFqRgheYH0Er7lZ4KW5nqRpbb0b\",\"ttl\":2592000,\"created\":\"2017-10-31T14:06:40.557Z\",\"userId\":1}",
+      "61FUJZiRVzdxbHt8eoPQrLSEgzhIVN3s9zbC7MCFoDquOjHUrN48WZ4r0xKsbaQA": "{\"id\":\"61FUJZiRVzdxbHt8eoPQrLSEgzhIVN3s9zbC7MCFoDquOjHUrN48WZ4r0xKsbaQA\",\"ttl\":2592000,\"created\":\"2017-10-31T16:00:02.917Z\",\"userId\":1}",
+      "pPKURZT7OJv8PieoKaky8xsH1gTVqGmCiWrpcaqXmUlcPZQgUbm5eJq580FkyHu6": "{\"id\":\"pPKURZT7OJv8PieoKaky8xsH1gTVqGmCiWrpcaqXmUlcPZQgUbm5eJq580FkyHu6\",\"ttl\":2592000,\"created\":\"2017-10-31T18:50:18.722Z\",\"userId\":1}",
+      "pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc": "{\"id\":\"pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc\",\"ttl\":2592000,\"created\":\"2017-11-07T16:06:25.628Z\",\"userId\":1}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "VMDMasteruserdata": {},
+    "VMDMasterEmmployeeCredential": {
+      "1": "{\"realm\":\"vmd\",\"username\":\"vmd\",\"password\":\"$2a$10$mFQvLEhTnJZCFJ8BQEpXF.5GftlF96BxocTV175gJiz.XrhLdJeDW\",\"email\":\"vmd@gmail.com\",\"emailVerified\":\"false\",\"id\":1}"
+    },
+    "VMDBooking": {
+      "1": "{\"fullname\":\"Rendy\",\"address\":\"Tangerang\",\"description\":\"Market\",\"application\":\"Market\",\"id\":1}",
+      "2": "{\"fullname\":\"asd\",\"address\":\"asd\",\"description\":\"asd\",\"application\":\"asd\",\"id\":2}"
+    },
+    "VMDAboutUs": {
+      "3": "{\"EmployeeOfTeam\":\"Esa Unggul\",\"HistoriOfTeam\":\"From people to the people\",\"ContactPerson\":\"021-59450889\",\"Address\":\"Jakarta Barat\",\"id\":3}"
+    },
+    "VMDTeam": {
+      "1": "{\"fullname\":\"asda\",\"nophone\":\"sd\",\"position\":\"asd\",\"id\":1}"
+    }
+  }
+}
