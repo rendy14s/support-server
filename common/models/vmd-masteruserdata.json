@@ -19,7 +19,7 @@
     },
     "photo": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "no_telp": {
       "type": "string",

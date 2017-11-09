@@ -1,12 +1,12 @@
 {
   "ids": {
     "User": 1,
-    "AccessToken": 8,
+    "AccessToken": 9,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "VMDMasteruserdata": 1,
-    "VMDMasterEmmployeeCredential": 2,
+    "VMDMasteruserdata": 2,
+    "VMDMasterEmmployeeCredential": 4,
     "VMDBooking": 3,
     "VMDAboutUs": 4,
     "VMDTeam": 2
@@ -20,14 +20,19 @@
       "BKSIHZwVNVx0hXwsKWqCxwPZOWy7v7zskca6xdFqRgheYH0Er7lZ4KW5nqRpbb0b": "{\"id\":\"BKSIHZwVNVx0hXwsKWqCxwPZOWy7v7zskca6xdFqRgheYH0Er7lZ4KW5nqRpbb0b\",\"ttl\":2592000,\"created\":\"2017-10-31T14:06:40.557Z\",\"userId\":1}",
       "61FUJZiRVzdxbHt8eoPQrLSEgzhIVN3s9zbC7MCFoDquOjHUrN48WZ4r0xKsbaQA": "{\"id\":\"61FUJZiRVzdxbHt8eoPQrLSEgzhIVN3s9zbC7MCFoDquOjHUrN48WZ4r0xKsbaQA\",\"ttl\":2592000,\"created\":\"2017-10-31T16:00:02.917Z\",\"userId\":1}",
       "pPKURZT7OJv8PieoKaky8xsH1gTVqGmCiWrpcaqXmUlcPZQgUbm5eJq580FkyHu6": "{\"id\":\"pPKURZT7OJv8PieoKaky8xsH1gTVqGmCiWrpcaqXmUlcPZQgUbm5eJq580FkyHu6\",\"ttl\":2592000,\"created\":\"2017-10-31T18:50:18.722Z\",\"userId\":1}",
-      "pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc": "{\"id\":\"pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc\",\"ttl\":2592000,\"created\":\"2017-11-07T16:06:25.628Z\",\"userId\":1}"
+      "pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc": "{\"id\":\"pKowsPey3EgUk0ZnohZjwOPstdewA85Bf9fVByEOtX2803quTwsJSFayPcAOTJUc\",\"ttl\":2592000,\"created\":\"2017-11-07T16:06:25.628Z\",\"userId\":1}",
+      "aVxMZgDzdk5GC83eU28K3tgsbkHb7K9NS1uSZn5ltyBjeUnPZRenYN7kc9AUsQXP": "{\"id\":\"aVxMZgDzdk5GC83eU28K3tgsbkHb7K9NS1uSZn5ltyBjeUnPZRenYN7kc9AUsQXP\",\"ttl\":2592000,\"created\":\"2017-11-07T19:23:35.360Z\",\"userId\":1}"
     },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "VMDMasteruserdata": {},
+    "VMDMasteruserdata": {
+      "1": "{\"fullname\":\"sss\",\"address\":\"sss\",\"no_telp\":\"sss\",\"tglLahir\":\"2017-11-08T00:00:00.000Z\",\"statusPerkawinan\":\"sss\",\"tempatLahir\":\"sss\",\"userId\":3,\"id\":1}"
+    },
     "VMDMasterEmmployeeCredential": {
-      "1": "{\"realm\":\"vmd\",\"username\":\"vmd\",\"password\":\"$2a$10$mFQvLEhTnJZCFJ8BQEpXF.5GftlF96BxocTV175gJiz.XrhLdJeDW\",\"email\":\"vmd@gmail.com\",\"emailVerified\":\"false\",\"id\":1}"
+      "1": "{\"realm\":\"vmd\",\"username\":\"vmd\",\"password\":\"$2a$10$mFQvLEhTnJZCFJ8BQEpXF.5GftlF96BxocTV175gJiz.XrhLdJeDW\",\"email\":\"vmd@gmail.com\",\"emailVerified\":\"false\",\"id\":1}",
+      "2": "{\"realm\":\"sss\",\"username\":\"sss\",\"password\":\"$2a$10$x71FPk3xX9giFvJ1Ddkdnup7rOjuYmxSLSeckPbP1asmcmAv9mAHi\",\"email\":\"sss@gmail.com\",\"id\":2}",
+      "3": "{\"realm\":\"sss\",\"username\":\"yyyy\",\"password\":\"$2a$10$1mN2EgNhfVvt0u/tR8UW7eHg/E19C7oigBUm5i7vRlDkptsPJb.ia\",\"email\":\"sssssssss@gmail.com\",\"id\":3}"
     },
     "VMDBooking": {
       "1": "{\"fullname\":\"Rendy\",\"address\":\"Tangerang\",\"description\":\"Market\",\"application\":\"Market\",\"id\":1}",
